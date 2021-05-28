@@ -1,25 +1,60 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Home from './pages/home/home';
+import Map from './pages/nightMap/nightMap';
+import Activities from './pages/activities/activities';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import FirstAid from './pages/firstAid/firstAid';
+import Security from './pages/security/security';
+import Prizes from './pages/prizes/prizes';
+import Casino from './pages/casino/casino';
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+
+
+class App extends React.Component {
+  render() {
+    return (
+
+      <div className = 'App'>
+
+    <Router>
+        <Switch>
+          <Route path="/map">
+            <Map />
+          </Route>
+
+          <Route path="/activities">
+            <Activities />
+          </Route>
+
+          <Route path="/aid">
+            <FirstAid />
+          </Route>
+
+          <Route path="/security">
+            <Security />
+          </Route>
+
+          <Route path="/prizes">
+            <Prizes />
+          </Route>
+
+          <Route path="/casino">
+            <Casino />
+          </Route>
+          
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+    </Router>
+
+      </div>
+
+    );
+  }
 }
 
 export default App;

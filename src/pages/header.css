@@ -1,0 +1,40 @@
+.titleText {
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.logo {
+  margin: -30px 0px;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .navButtons {
+    display: none;
+  }
+}
+
+@media (max-width: 716px) {
+  .titleText {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .titleText {
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 55px;
+  }
+}
+
+@media (max-width: 427px) {
+  .titleText {
+    font-size: 14px;
+  }
+  .logo {
+    width: 68px;
+  }
+}
