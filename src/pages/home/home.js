@@ -87,6 +87,7 @@ const Home = (props) => {
             in and noted by a volunteer. It will be put in the First Aid tent. (epipens, etc) </ListItem>
           <ListItem> No in and out privileges. </ListItem>
           <ListItem> Come HUNGRY - there will be so many different types of food to choose from. </ListItem>
+          <ListItem> More information about the event can be found in the drop-down bar. </ListItem>
 
         </OrderedList>
 
