@@ -21,8 +21,7 @@ const prizes = () => {
 
       <Text
       fontFamily = 'Comfortaa'
-      margin = 'auto 23%'> Raffle drawings every half hour from 9pm-12am. For the first hour, 
-      winners will be announced on the small stage. From 10pm-12am winners will be announced on the main stage. </Text>
+      margin = 'auto 23%'> Drawings will be held at the main stage every 45 minutes starting at 9pm until midnight. </Text>
     </div>
   )
 };
