@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from '../header';
-import {Heading, Center, Text} from '@chakra-ui/react';
-import nightMap from './PreGradNightMap.png';
+import {Heading, Center} from '@chakra-ui/react';
+import nightMap from './GradNightMap.png';
 import evacMap from './evacMap.jpg';
 import './nightMap.css';
 
@@ -26,8 +26,6 @@ const map = () => {
           alt = "night map"
         />
       </Center>
-
-      <Text fontFamily = 'Comfortaa'>Coming Soon!</Text>
 
 
       <br />
